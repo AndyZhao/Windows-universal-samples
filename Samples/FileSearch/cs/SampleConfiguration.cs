@@ -22,6 +22,7 @@ namespace SDKTemplate
         List<Scenario> scenarios = new List<Scenario>
         {
             new Scenario() { Title = "Obtain all files that match a search query", ClassType = typeof(Scenario1) },
+            new Scenario() {Title = "Calculator", ClassType = typeof(Scenario2) }
         };
     }
 

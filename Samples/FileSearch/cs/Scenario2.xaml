@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="SDKTemplate.Scenario2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SDKTemplate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left">
+                    <LineBreak/>
+                    <LineBreak/>
+                    Calculator
+                </TextBlock>
+                <TextBlock> Please input 2 numbers for calculating:</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextWrapping="Wrap" Text="Para1: " HorizontalAlignment="Left"/>
+                    <TextBox x:Name="textBox_para1"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextWrapping="Wrap" Text="Para2: " HorizontalAlignment="Left"/>
+                    <TextBox Name="textBox_para2"></TextBox>
+                </StackPanel>
+                <Button Name="button_calc">Calcualte</Button>
+                <StackPanel>
+                    <TextBlock>Result: </TextBlock>
+                    <TextBlock Name="textBlock_result"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
